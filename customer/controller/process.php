@@ -45,10 +45,13 @@ if (isset($_REQUEST["Submit"])){
     // password validation
     if (empty($_REQUEST['password'])){
         $passwordError = "Please enter password";
+        $haserror = 1;
     }
     else{
         if (strlen($_REQUEST['password']) < 6){
             $passwordError = "Password should at least 6 character long";
+            $haserror = 1;
+
         }
         else{
             if (preg_match('/[A-Z]/', $_REQUEST['password'])){
@@ -56,6 +59,8 @@ if (isset($_REQUEST["Submit"])){
             }
             else{
                 $passwordError = "Password must contain one uppercase.";
+                $haserror = 1;
+
             }
         }
     }
@@ -63,6 +68,8 @@ if (isset($_REQUEST["Submit"])){
     // drop down validation
     if ($_REQUEST['businessType'] == ''){
         $businessTypeError = 'Please choose one option';
+        $haserror = 1;
+
     }else{
         $businessType = $_REQUEST['businessType'];
     }
@@ -70,10 +77,13 @@ if (isset($_REQUEST["Submit"])){
     // phone number validation
     if (empty($_REQUEST['phoneNumber'])){
         $phoneNumberError = "please enter phone number";
+        $haserror = 1;
+
     }
     else{
         if (!is_numeric($_REQUEST['phoneNumber'])){
             $phoneNumberError = "Phone number should contain only numbers";
+            $haserror = 1;
         }else{
             $phoneNumber = $_REQUEST['phoneNumber'];
         }
