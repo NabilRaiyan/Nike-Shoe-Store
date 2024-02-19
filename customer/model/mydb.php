@@ -7,7 +7,7 @@
             return $conn;
         }
 
-        //adding customer
+        //inserting customer into db
         function addCustomer($conn, $table, $name, $email, $password, $confirmPassword){
             $sql="INSERT INTO $table (name,email, password, confirmPassword) 
             VALUES ('$name', '$email', '$password', '$confirmPassword')";
