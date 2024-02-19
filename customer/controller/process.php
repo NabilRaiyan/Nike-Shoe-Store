@@ -3,7 +3,7 @@
 // declaring variable
 $businessName=$businessType=$email=$password=$confirmPassword=$taxNumber=$phoneNumber=$haserror= '';
 $businessNameError=$emailError=$businessTypeError=$passwordError=$confirmPasswordError=$taxNumber=$phoneNumberError='';
-include './customer/model/mydb.php';
+include '../model/mydb.php';
 
 // if submit button has been clicked
 if (isset($_REQUEST["Submit"])){
@@ -88,8 +88,19 @@ if (isset($_REQUEST["Submit"])){
             $phoneNumber = $_REQUEST['phoneNumber'];
         }
     }
+
     
-    
+    $mydb = new Model();
+    $conobj = $mydb->OpenCon();
+    $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["businessName"], $_REQUEST["email"], $_REQUEST["password"], 
+    $_REQUEST["confirmPassword"]);
+    if ($result === TRUE){
+        echo "Successfully inserted the data";
+    }else{
+        echo "Error occured ".$conobj->error;
+    }
+     
 }
 
+    
 ?>
