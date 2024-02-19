@@ -91,7 +91,9 @@ if (isset($_REQUEST["Submit"])){
 
     // creating Class model and connecting with db and inserting data
     $mydb = new Model();
+    // opening connection
     $conobj = $mydb->OpenCon();
+    // invoking function
     $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["businessName"], $_REQUEST["email"], $_REQUEST["password"], 
     $_REQUEST["confirmPassword"]);
     if ($result === TRUE){
