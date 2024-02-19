@@ -1,6 +1,7 @@
 <?php 
     class Model
     {
+        // creating connection
         function OpenCon(){
             $conn = new mysqli("localhost", "root","", "customer");
             return $conn;
