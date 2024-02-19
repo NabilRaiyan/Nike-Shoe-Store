@@ -89,7 +89,7 @@ if (isset($_REQUEST["Submit"])){
         }
     }
 
-    
+    // creating Class model and connecting with db and inserting data
     $mydb = new Model();
     $conobj = $mydb->OpenCon();
     $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["businessName"], $_REQUEST["email"], $_REQUEST["password"], 
