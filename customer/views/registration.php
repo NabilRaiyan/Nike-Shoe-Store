@@ -32,25 +32,7 @@
 
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label for="businessType">Business Type:</label>
-                        </td>
-                        <td>
-                            <select name="businessType" id="businessType">
-                                <option selected value=""></option>
-                                <option value="retail">Retail</option>
-                                <option value="consulting">Consulting</option>
-                                <option value="foodServices">Food Services</option>
-                                <option value="construction">Construction</option>
-                                <option value="healthcare">Healthcare</option>
-                                <option value="healthcare">Others</option>
-
-                            </select>
-                            <?php echo $businessType;?>
-                            <?php echo $businessTypeError;?>
-                        </td>
-                    </tr>
+                   
                     
                     <tr>
                         <td>
@@ -89,16 +71,7 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>
-                            <label for="phoneNumber">Phone Number: </label>
-                        </td>
-                        <td>
-                            <input name="phoneNumber" type="text" />
-                            <?php echo $phoneNumber;?>
-                            <?php echo $phoneNumberError;?>
-                        </td>
-                    </tr>
+                   
                     <tr>
                         <td>
                             <input name="termsCondition" type="checkbox" />
