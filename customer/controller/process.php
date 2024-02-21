@@ -1,8 +1,8 @@
 <?php 
 
 // declaring variable
-$businessName=$businessType=$email=$password=$confirmPassword=$taxNumber=$phoneNumber=$haserror= '';
-$businessNameError=$emailError=$businessTypeError=$passwordError=$confirmPasswordError=$taxNumber=$phoneNumberError='';
+$businessName=$email=$password=$confirmPassword=$haserror= '';
+$businessNameError=$emailError=$passwordError=$confirmPasswordError='';
 include '../model/mydb.php';
 
 // if submit button has been clicked
