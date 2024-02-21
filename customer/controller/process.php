@@ -65,29 +65,7 @@ if (isset($_REQUEST["Submit"])){
         }
     }
 
-    // drop down validation
-    if ($_REQUEST['businessType'] == ''){
-        $businessTypeError = 'Please choose one option';
-        $haserror = 1;
-
-    }else{
-        $businessType = $_REQUEST['businessType'];
-    }
-
-    // phone number validation
-    if (empty($_REQUEST['phoneNumber'])){
-        $phoneNumberError = "please enter phone number";
-        $haserror = 1;
-
-    }
-    else{
-        if (!is_numeric($_REQUEST['phoneNumber'])){
-            $phoneNumberError = "Phone number should contain only numbers";
-            $haserror = 1;
-        }else{
-            $phoneNumber = $_REQUEST['phoneNumber'];
-        }
-    }
+   
 
     // creating Class model and connecting with db and inserting data
     $mydb = new Model();
