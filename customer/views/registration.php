@@ -44,14 +44,7 @@
                             <?php echo $emailError;?>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label for="taxIdentity">Tax Identification Number (TIN)</label>
-                        </td>
-                        <td>
-                            <input name="taxIdentity" type="number" />
-                        </td>
-                    </tr>
+                    
                     <tr>
                         <td>
                             <label for="password">Password: </label>
