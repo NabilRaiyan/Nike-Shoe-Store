@@ -65,8 +65,7 @@ if (isset($_REQUEST["Submit"])){
         }
     }
 
-   
-
+    
     // creating Class model and connecting with db and inserting data
     $mydb = new Model();
     // opening connection
