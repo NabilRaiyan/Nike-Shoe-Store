@@ -14,7 +14,7 @@
     <div>
         <form action="" method="POST">
             <fieldset>
-                <legend>Register</legend>
+                <legend>Sign Up</legend>
                 <table>
                     <tr>
                         <td>
