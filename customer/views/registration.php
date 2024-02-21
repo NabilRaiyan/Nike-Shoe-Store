@@ -18,7 +18,7 @@
                 <table>
                     <tr>
                         <td>
-                            <h1>SMALL BUSINESS REGISTRATION</h1>
+                            <h1>Don't have any account? Sign up!</h1>
                         </td>
                     </tr>
                     <tr>
