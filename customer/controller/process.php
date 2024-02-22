@@ -54,6 +54,7 @@ if (isset($_REQUEST["Submit"])){
 
         }
         else{
+            // checking if password has atleast one uppercase 
             if (preg_match('/[A-Z]/', $_REQUEST['password'])){
                 $password = $_REQUEST['password'];
             }
