@@ -68,16 +68,20 @@ if (isset($_REQUEST["Submit"])){
 
     
     // creating Class model and connecting with db and inserting data
-    $mydb = new Model();
-    // opening connection
-    $conobj = $mydb->OpenCon();
-    // invoking function
-    $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["Name"], $_REQUEST["email"], $_REQUEST["password"], 
-    $_REQUEST["confirmPassword"]);
-    if ($result === TRUE){
-        echo "Successfully inserted the data";
+    if (!$haserror == 1){
+        $mydb = new Model();
+        // opening connection
+        $conobj = $mydb->OpenCon();
+        // invoking function
+        $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["Name"], $_REQUEST["email"], $_REQUEST["password"], 
+        $_REQUEST["confirmPassword"]);
+        if ($result === TRUE){
+            echo "Successfully inserted the data";
+        }else{
+            echo "Error occured ".$conobj->error;
+        }
     }else{
-        echo "Error occured ".$conobj->error;
+        echo "Please enter all the information.";
     }
      
 }
