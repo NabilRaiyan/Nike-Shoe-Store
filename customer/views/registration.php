@@ -1,5 +1,6 @@
 <?php 
     include "../controller/process.php";
+    include "../../layouts/header.php";
 ?>
 
 
@@ -30,6 +31,9 @@
 
             <button class="signupButton" type="submit" name="Submit">SIGN UP</button>
         </form>
+
+        <?php include "../../layouts/footer.php"; ?>
+
     </div>
 
         
