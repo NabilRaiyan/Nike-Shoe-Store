@@ -11,76 +11,17 @@
     <title>Registration</title>
 </head>
 <body>
-    <div>
+    <div class="sign-up-div">
         <form action="" method="POST">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <table>
-                    <tr>
-                        <td>
-                            <h1>Don't have any account? Sign up!</h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="businessName">Business Name:</label>
-                        </td>
-                        <td>
-                            <input name="businessName" type="text" />
-                            <?php echo $businessName;?>
-                            <?php echo $businessNameError;?>
+            <h1>Don't have any account? Sign up for free!</h1>
+            <input name="name" type="text" placeholder="Enter Username"/>
+            <input  name="email" type="text" placeholder="Enter Email"/>
+            <input name="password" type="text" placeholder="Enter Password"/>
+            <input name="confirmPassword" type="text" placeholder="Re-Enter Password"/>
 
-                        </td>
-                    </tr>
-                   
-                    
-                    <tr>
-                        <td>
-                            <label for="email">Email:</label>
-                        </td>
-                        <td>
-                            <input name="email" type="email" />
-                            <?php echo $email;?>
-                            <?php echo $emailError;?>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <label for="password">Password: </label>
-                        </td>
-                        <td>
-                            <input name="password" type="password" />
-                            <?php echo $password;?>
-                            <?php echo $passwordError;?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="confirmPassword">Confirm Password</label>
-                        </td>
-                        <td>
-                            <input name="confirmPassword" type="password" />
-                        </td>
-                    </tr>
 
-                   
-                    <tr>
-                        <td>
-                            <input name="termsCondition" type="checkbox" />
-                            <label for="termsCondition">I accept the Terms of Service and Privacy Policy</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button name="Submit" type="submit">Register</button>
-                            <button name="Reset" type="reset">Reset</button>
 
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
+            <button class="signupButton" type="submit" name="submit">SIGN UP</button>
         </form>
     </div>
 

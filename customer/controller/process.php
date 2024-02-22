@@ -1,19 +1,19 @@
 <?php 
 
 // declaring variable
-$businessName=$email=$password=$confirmPassword=$haserror= '';
-$businessNameError=$emailError=$passwordError=$confirmPasswordError='';
+$name=$email=$password=$confirmPassword=$haserror= '';
+$nameError=$emailError=$passwordError=$confirmPasswordError='';
 include '../model/mydb.php';
 
 // if submit button has been clicked
 if (isset($_REQUEST["Submit"])){
     
     // name validation
-    if(strlen($_REQUEST["businessName"]) < 4){
-        $businessNameError = "Business Name Should be atleast 4 character long.";
+    if(strlen($_REQUEST["name"]) < 4){
+        $nameError = "Business Name Should be atleast 4 character long.";
         $haserror=1;
     }else{
-        $businessName = $_REQUEST["businessName"];
+        $name = $_REQUEST["name"];
     }
     
 
@@ -72,7 +72,7 @@ if (isset($_REQUEST["Submit"])){
     // opening connection
     $conobj = $mydb->OpenCon();
     // invoking function
-    $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["businessName"], $_REQUEST["email"], $_REQUEST["password"], 
+    $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["name"], $_REQUEST["email"], $_REQUEST["password"], 
     $_REQUEST["confirmPassword"]);
     if ($result === TRUE){
         echo "Successfully inserted the data";
