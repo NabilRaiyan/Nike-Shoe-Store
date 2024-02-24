@@ -4,7 +4,6 @@
     include "../../layouts/header.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,9 +27,9 @@
         </form>
 
     </div>
-
+    
+    <!-- Sign up div -->
     <div class="sign-up-div">
-        <!-- Sign up div -->
         <form action="" method="POST">
             <h1>Don't have any account? Sign up for free!</h1>
             <input name="Name" type="text" placeholder="Enter UserName"/>
