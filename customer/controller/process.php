@@ -1,9 +1,11 @@
 <?php 
 
+// Sign up operations
 // declaring variable
 $Name=$email=$password=$confirmPassword=$haserror= '';
 $NameError=$emailError=$passwordError=$confirmPasswordError='';
 include '../model/mydb.php';
+
 
 // if submit button has been clicked
 if (isset($_REQUEST["Submit"])){
