@@ -23,11 +23,8 @@
             <input name="password" type="text" placeholder="Enter Password"/>
             <?php echo $passwordError?>
 
-            <button class="signInButton" type="submit" name="Submit">SIGN UP</button>
+            <button class="signInButton" type="submit" name="Submit">SIGN IN</button>
         </form>
-
-        <!-- Footer  -->
-        <?php include "../../layouts/footer.php"; ?>
 
     </div>
 
