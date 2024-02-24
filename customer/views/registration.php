@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>JOIN WITH US</title>
 </head>
 <body>
 
