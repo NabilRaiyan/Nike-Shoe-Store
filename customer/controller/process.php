@@ -94,7 +94,7 @@ if (isset($_REQUEST["Submit"])){
     if (isset($_REQUEST["SignInSubmit"])){
         // email validation
         if (empty($_REQUEST["signInEmail"])){
-            $signInEmailError = "Please enter email!"
+            $signInEmailError = "Please enter email!";
         }
     }
 
