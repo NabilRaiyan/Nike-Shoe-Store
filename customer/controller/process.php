@@ -91,6 +91,12 @@ if (isset($_REQUEST["Submit"])){
 
     $signInEmail=$signInPassword="";
     $signInEmailError=$signInPasswordError="";
+    if (isset($_REQUEST["SignInSubmit"])){
+        // email validation
+        if (empty($_REQUEST["signInEmail"])){
+            $signInEmailError = "Please enter email!"
+        }
+    }
 
 }
 ?>
