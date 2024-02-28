@@ -14,5 +14,10 @@
             $result = $conn->query($sql);
             return $result;
         }
+
+        // creating sign in function
+        function signIn(){
+            
+        }
     }
 ?>
