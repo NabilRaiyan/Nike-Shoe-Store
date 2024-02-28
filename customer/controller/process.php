@@ -97,14 +97,15 @@ if (isset($_REQUEST["Submit"])){
             $signInEmailError = "Please enter email!";
             $signInHasError = 1;
         }else{
-            if (!empty($_REQUEST["email"])){
-                
+            if (!empty($_REQUEST["signInEmail"])){
+                $signInEmail = $_REQUEST["signInEmail"];
     
             }else{
                 $emailError = "Please enter valid email address.";
             }
         }
     }
+
 
 }
 ?>
