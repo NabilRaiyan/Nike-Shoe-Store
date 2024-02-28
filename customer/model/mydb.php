@@ -16,8 +16,10 @@
         }
 
         // creating sign in function
-        // function signIn(){
-        //     $sql = ""
-        // }
+        function signIn($conn, $table, $signInEmail){
+            $SignInSql = "SELECT * FROM $table WHERE email='$signInEmail'";
+            $result = $conn->query($SignInSql);
+            return $result;
+        }
     }
 ?>

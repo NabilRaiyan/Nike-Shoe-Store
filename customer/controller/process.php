@@ -90,11 +90,19 @@ if (isset($_REQUEST["Submit"])){
     // sign in operations
 
     $signInEmail=$signInPassword="";
-    $signInEmailError=$signInPasswordError="";
+    $signInEmailError=$signInPasswordError=$signInHasError="";
     if (isset($_REQUEST["SignInSubmit"])){
         // email validation
         if (empty($_REQUEST["signInEmail"])){
             $signInEmailError = "Please enter email!";
+            $signInHasError = 1;
+        }else{
+            if (!empty($_REQUEST["email"])){
+                
+    
+            }else{
+                $emailError = "Please enter valid email address.";
+            }
         }
     }
 
