@@ -88,5 +88,9 @@ if (isset($_REQUEST["Submit"])){
      
 
     // sign in operations
+
+    $signInEmail=$signInPassword="";
+    $signInEmailError=$signInPasswordError="";
+
 }
 ?>

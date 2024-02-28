@@ -16,8 +16,8 @@
         }
 
         // creating sign in function
-        function signIn(){
-            
-        }
+        // function signIn(){
+        //     $sql = ""
+        // }
     }
 ?>
