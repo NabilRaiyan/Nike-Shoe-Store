@@ -1,5 +1,5 @@
 <?php 
-    include "../controller/process.php";
+    include "../controller/signUpProcess.php";
     include "../controller/signInProcess.php";
     // Header
     include "../../layouts/header.php";
