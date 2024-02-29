@@ -19,10 +19,12 @@
             <h1>Already have an account? Sign In!</h1>
             <input  name="signInEmail" type="text" placeholder="Enter Email"/>
             <?php echo $emailError?>
-            <?php echo $emailError?>
+            <?php echo $signInEmail;?>
 
             <input name="signInPassword" type="text" placeholder="Enter Password"/>
             <?php echo $passwordError?>
+            <?php echo $signInPassword;?>
+
 
             <button class="signInButton" type="submit" name="SignInSubmit">SIGN IN</button>
         </form>
