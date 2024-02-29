@@ -18,11 +18,11 @@
         <form action="" method="POST">
             <h1>Already have an account? Sign In!</h1>
             <input  name="signInEmail" type="text" placeholder="Enter Email"/>
-            <?php echo $emailError?>
+            <?php echo $signInEmailError?>
             <?php echo $signInEmail;?>
 
             <input name="signInPassword" type="text" placeholder="Enter Password"/>
-            <?php echo $passwordError?>
+            <?php echo $signInPasswordError?>
             <?php echo $signInPassword;?>
 
 
