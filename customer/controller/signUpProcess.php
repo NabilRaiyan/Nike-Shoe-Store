@@ -68,6 +68,22 @@ if (isset($_REQUEST["Submit"])){
         }
     }
 
+    // confirm password validation
+    if (empty($_REQUEST["confirmPassword"])){
+        $confirmPasswordError = "Please enter password.";
+        $haserror = 1;
+    }else{
+        if (!empty($_REQUEST["confirmPassword"])){
+            if ($_REQUEST["password"] === $_REQUEST["confirmPassword"]){
+                $confirmPassword = $_REQUEST["confirmPassword"];
+            }else{
+                $confirmPasswordError = "Password doesn't match.";
+                $haserror = 1;
+            }
+
+        }
+    }
+
     
     // creating Class model and connecting with db and inserting data
     if (!$haserror == 1){
