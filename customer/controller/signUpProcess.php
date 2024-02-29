@@ -75,8 +75,7 @@ if (isset($_REQUEST["Submit"])){
         // opening connection
         $conobj = $mydb->OpenCon();
         // invoking function
-        $result = $mydb->addCustomer($conobj, "customerRegistration", $_REQUEST["Name"], $_REQUEST["email"], $_REQUEST["password"], 
-        $_REQUEST["confirmPassword"]);
+        $result = $mydb->addCustomer($conobj, "customerRegistration", $Name, $email, $password, $confirmPassword);
         if ($result === TRUE){
             echo "Successfully inserted the data";
         }else{
