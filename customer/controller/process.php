@@ -27,7 +27,7 @@ if (isset($_REQUEST["Submit"])){
     }
     else{
         if (!empty($_REQUEST["email"])){
-            if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(aiub+\.)+edu$/ix",$_REQUEST["email"]))
+            if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+edu$/ix",$_REQUEST["email"]))
             {
                 $emailError = "Email is not valid";
                 $haserror=1;
@@ -98,11 +98,27 @@ if (isset($_REQUEST["Submit"])){
             $signInHasError = 1;
         }else{
             if (!empty($_REQUEST["signInEmail"])){
-                $signInEmail = $_REQUEST["signInEmail"];
-    
+                if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+edu$/ix",$_REQUEST["email"]))
+                    {
+                        $emailError = "Email is not valid";
+                        $haserror=1;
+
+                    }
+                else{
+                    $signInEmail = $_REQUEST["signInEmail"];
+
+            }    
             }else{
                 $emailError = "Please enter valid email address.";
             }
+        }
+        
+        // password validation
+        if (empty($_REQUEST["signInPassword"])){
+            $signInPasswordError = "Please enter a password.";
+            $signInHasError = 1;
+        }else{
+            $signInPassword = $_REQUEST["signInPassword"];
         }
     }
 
