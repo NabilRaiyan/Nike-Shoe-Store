@@ -27,7 +27,7 @@ if (isset($_REQUEST["Submit"])){
     }
     else{
         if (!empty($_REQUEST["email"])){
-            if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+edu$/ix",$_REQUEST["email"]))
+            if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+com$/ix",$_REQUEST["email"]))
             {
                 $emailError = "Email is not valid";
                 $haserror=1;
