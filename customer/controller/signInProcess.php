@@ -1,6 +1,6 @@
 <?php 
 
-    //include '../model/mydb.php';
+    include_once '../model/mydb.php';
     // sign in operations
 
     $signInEmail=$signInPassword="";

@@ -4,7 +4,7 @@
 // declaring variable
 $Name=$email=$password=$confirmPassword=$haserror= '';
 $NameError=$emailError=$passwordError=$confirmPasswordError='';
-include '../model/mydb.php';
+include_once '../model/mydb.php';
 
 
 // if submit button has been clicked
