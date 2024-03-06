@@ -34,6 +34,7 @@
             $signInPassword = $_REQUEST["signInPassword"];
         }
 
+        // sign in process
         if ($signInHasError == 1){
             echo "Please enter credentials.";
         }else{
@@ -41,6 +42,11 @@
             // opening connection
             $conObj = $mydb->OpenCon();
             $result = $mydb->signIn($conObj, "customerRegistration", $signInEmail, $signInPassword);
+            if ($result == TRUE){
+                echo "Successfully Signed In";
+            }else{
+                echo "User does not exist. Please register first.";
+            }
         }
     }
 ?>
