@@ -95,7 +95,7 @@ if (isset($_REQUEST["Submit"])){
         if ($result === TRUE){
             echo "Successfully inserted the data";
         }else{
-            echo "Error occured ".$conobj->error;
+            echo "Error occured " . $conobj->error;
         }
     }else{
         echo "Please enter all the information.";

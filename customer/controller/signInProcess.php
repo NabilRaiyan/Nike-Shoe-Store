@@ -1,5 +1,6 @@
 <?php 
 
+    //include '../model/mydb.php';
     // sign in operations
 
     $signInEmail=$signInPassword="";
@@ -11,7 +12,7 @@
             $signInHasError = 1;
         }else{
             if (!empty($_REQUEST["signInEmail"])){
-                if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+com$/ix",$_REQUEST["email"]))
+                if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@(gmail+\.)+com$/ix",$_REQUEST["signInEmail"]))
                     {
                         $signInEmailError = "Email is not valid";
                         $haserror=1;
@@ -35,18 +36,20 @@
         }
 
         // sign in process
-        if ($signInHasError == 1){
-            echo "Please enter credentials.";
-        }else{
+        if (!$signInHasError == 1){
             $mydb = new Model();
             // opening connection
-            $conObj = $mydb->OpenCon();
-            $result = $mydb->signIn($conObj, "customerRegistration", $signInEmail, $signInPassword);
-            if ($result == TRUE){
+            $conobj = $mydb->OpenCon();
+            $result = $mydb->signIn($conobj, "customerRegistration", $signInEmail, $signInPassword);
+            if ($result === TRUE){
                 echo "Successfully Signed In";
             }else{
                 echo "User does not exist. Please register first.";
+                echo "Error occured ".$conobj->error;
+
             }
+        }else{
+            echo "Please enter all the information.";
         }
     }
 ?>

@@ -17,7 +17,7 @@
 
         // creating sign in function
         function signIn($conn, $table, $signInEmail, $signInPassword){
-            $SignInSql = "SELECT * FROM $table WHERE email='$signInEmail' AND password='$signInPassword'";
+            $SignInSql="SELECT * FROM $table WHERE email='$signInEmail'";
             $result = $conn->query($SignInSql);
             return $result;
         }
