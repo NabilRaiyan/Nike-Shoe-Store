@@ -33,5 +33,14 @@
         }else{
             $signInPassword = $_REQUEST["signInPassword"];
         }
+
+        if ($signInHasError == 1){
+            echo "Please enter credentials.";
+        }else{
+            $mydb = new Model();
+            // opening connection
+            $conObj = $mydb->OpenCon();
+            $result = $mydb->signIn($conObj, "customerRegistration", $signInEmail, $signInPassword);
+        }
     }
 ?>
