@@ -40,8 +40,6 @@ if (isset($_REQUEST["Submit"])){
         }else{
             $emailError = "Please enter valid email address.";
         }
-
-
     }
         
     // password validation
@@ -83,7 +81,7 @@ if (isset($_REQUEST["Submit"])){
 
         }
     }
-    
+
     // creating Class model and connecting with db and inserting data
     if (!$haserror == 1){
         $mydb = new Model();
