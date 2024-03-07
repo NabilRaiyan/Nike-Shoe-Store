@@ -83,7 +83,6 @@ if (isset($_REQUEST["Submit"])){
 
         }
     }
-
     
     // creating Class model and connecting with db and inserting data
     if (!$haserror == 1){
