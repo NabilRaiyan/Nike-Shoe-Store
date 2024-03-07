@@ -18,7 +18,6 @@ if (isset($_REQUEST["Submit"])){
         $Name = $_REQUEST["Name"];
     }
     
-
     // email validation
     if (empty($_REQUEST['email'])){
         $emailError = "Please enter the email";
