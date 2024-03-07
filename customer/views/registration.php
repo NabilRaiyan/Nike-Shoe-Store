@@ -19,11 +19,11 @@
         <form action="" method="POST">
             <h1>Already have an account? Sign In!</h1>
             <input  name="signInEmail" type="text" placeholder="Enter Email"/>
-            <?php echo $signInEmailError?>
+            <?php echo $signInEmailError;?>
             <?php echo $signInEmail;?>
 
             <input name="signInPassword" type="text" placeholder="Enter Password"/>
-            <?php echo $signInPasswordError?>
+            <?php echo $signInPasswordError;?>
             <?php echo $signInPassword;?>
 
             <button class="signInButton" type="submit" name="SignInSubmit">SIGN IN</button>
@@ -36,15 +36,15 @@
         <form action="" method="POST">
             <h1>Don't have any account? Sign up for free!</h1>
             <input name="Name" type="text" placeholder="Enter UserName"/>
-            <?php echo $NameError?>
+            <?php echo $NameError;?>
             <input  name="email" type="text" placeholder="Enter Email"/>
-            <?php echo $emailError?>
+            <?php echo $emailError;?>
 
             <input name="password" type="text" placeholder="Enter Password"/>
-            <?php echo $passwordError?>
+            <?php echo $passwordError;?>
 
             <input name="confirmPassword" type="text" placeholder="Re-Enter Password"/>
-            <?php echo $confirmPasswordError?>
+            <?php echo $confirmPasswordError;?>
 
             <button class="signupButton" type="submit" name="Submit">SIGN UP</button>
         </form>
