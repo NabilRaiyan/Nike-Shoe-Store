@@ -1,6 +1,6 @@
 <?php 
 
-    include_once '../model/mydb.php';
+    require_once '../model/mydb.php';
     // sign in operations
 
     $signInEmail=$signInPassword="";
@@ -46,7 +46,6 @@
             }else{
                 echo "User does not exist. Please register first.";
                 echo "Error occured ".$conobj->error;
-
             }
         }else{
             echo "Please enter all the information.";
