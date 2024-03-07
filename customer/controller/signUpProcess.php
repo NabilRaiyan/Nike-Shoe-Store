@@ -100,6 +100,5 @@ if (isset($_REQUEST["Submit"])){
     }else{
         echo "Please enter all the information.";
     }
-     
 }
 ?>
