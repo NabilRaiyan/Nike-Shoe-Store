@@ -26,7 +26,6 @@
             <?php echo $signInPasswordError?>
             <?php echo $signInPassword;?>
 
-
             <button class="signInButton" type="submit" name="SignInSubmit">SIGN IN</button>
         </form>
 
