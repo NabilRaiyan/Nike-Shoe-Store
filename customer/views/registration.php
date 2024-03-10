@@ -46,6 +46,7 @@
             <input name="confirmPassword" type="text" placeholder="Re-Enter Password"/>
             <?php echo $confirmPasswordError;?>
 
+            
             <button class="signupButton" type="submit" name="Submit">SIGN UP</button>
         </form>
 
