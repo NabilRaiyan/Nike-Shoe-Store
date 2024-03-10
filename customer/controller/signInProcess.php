@@ -3,6 +3,7 @@
     require_once '../model/mydb.php';
     // sign in operations
 
+    // declaring variables
     $signInEmail=$signInPassword="";
     $signInEmailError=$signInPasswordError=$signInHasError="";
     if (isset($_REQUEST["SignInSubmit"])){
