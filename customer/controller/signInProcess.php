@@ -42,7 +42,7 @@
             // opening connection
             $conobj = $mydb->OpenCon();
             $result = $mydb->signIn($conobj, "customerRegistration", $signInEmail, $signInPassword);
-            if ($result === TRUE){
+            if ($result->num_rows === 1){
                 echo "Successfully Signed In";
             }else{
                 echo "User does not exist. Please register first.";
