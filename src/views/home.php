@@ -19,6 +19,8 @@
 
 
 
-    <?php include '../../layouts/footer.php';?>
+    <?php
+        // including footer for home page
+         include '../../layouts/footer.php';?>
 </body>
 </html>
