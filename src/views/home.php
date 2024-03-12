@@ -6,6 +6,8 @@
     <title>HOME|Nike</title>
 </head>
 <body>
-    
+    <div class="upperSection">
+
+    </div>
 </body>
 </html>
