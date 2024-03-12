@@ -1,4 +1,8 @@
-<?php include '../../layouts/header.php'; ?>
+
+
+<?php
+    // including header for home page
+    include '../../layouts/header.php'; ?>
 
 
 <!DOCTYPE html>
