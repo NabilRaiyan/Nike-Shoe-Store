@@ -2,7 +2,8 @@
 
 <?php
     // including header for home page
-    include '../../layouts/header.php'; ?>
+    include '../../layouts/header.php'; 
+?>
 
 
 <!DOCTYPE html>
@@ -21,6 +22,7 @@
 
     <?php
         // including footer for home page
-         include '../../layouts/footer.php';?>
+         include '../../layouts/footer.php';
+    ?>
 </body>
 </html>
