@@ -18,7 +18,6 @@
 
     </div>
 
-
     <?php
         // including footer for home page
          include '../../layouts/footer.php';
