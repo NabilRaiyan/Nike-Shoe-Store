@@ -4,6 +4,7 @@
     ini_set('display_errors', 1);
     class Model
     {
+        
         // creating connection
         function OpenCon(){
             $conn = new mysqli("localhost", "root","", "customer");
@@ -17,7 +18,7 @@
             $result = $conn->query($sql);
             return $result;
         }
-        
+
         // creating sign in function
         function signIn($conn, $table, $signInEmail, $signInPassword){
             $SignInSql="SELECT email, password FROM $table WHERE email='$signInEmail' AND password='$signInPassword'";
