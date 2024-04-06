@@ -16,7 +16,6 @@
     <div class="upperSection">
 
     </div>
-
     
     <?php
         // including footer for home page
